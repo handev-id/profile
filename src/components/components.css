@@ -1,0 +1,50 @@
+:root {
+  --white: #fff;
+  --dark: #15181d;
+  --dark1: #262a33;
+  --blue: #0270d7;
+  --blue1: #198ffd;
+  --orange: tomato;
+}
+
+.menus {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  background-color: var(--dark1);
+  overflow: hidden;
+  box-shadow: 1px -1px 50px 5px #00000015;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menu:hover {
+  background-color: var(--blue);
+}
+
+.menus:hover {
+  box-shadow: 2px 2px 50px 2px #198ffd9e;
+}
+
+.menu.active {
+  background-color: var(--blue);
+}
+
+@media screen and (max-width: 640px) {
+  .menus {
+    width: 100%;
+  }
+}

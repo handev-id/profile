@@ -121,6 +121,7 @@ p {
   background: url("/hero-back-illustration.svg");
   background-repeat: repeat;
   height: 100vh;
+  overflow: hidden;
 }
 
 @keyframes bg-animation {
