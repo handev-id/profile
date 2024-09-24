@@ -2,7 +2,7 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div className="row text-center">
+    <div className="row profile text-center">
       <div className="col-12">
         <img
           src="/z-profile.jpeg"
