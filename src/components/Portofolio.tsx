@@ -21,7 +21,7 @@ const Portofolio = () => {
           style={{ width: window.innerWidth < 1024 ? "100%" : "50%" }}
         >
           {slide === 1 ? (
-            <Slider {...settings}>
+          <Slider {...settings}>
               <div>
                 <img
                   style={{ width: "100%", objectFit: "contain" }}
@@ -113,8 +113,129 @@ const Portofolio = () => {
                   alt=""
                 />
               </div>
+              </Slider>
+          ) : slide === 2 ? (
+            <Slider {...settings}>
+            <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/fashiotrendz/fashio1.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/fashiotrendz/fashio2.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/fashiotrendz/fashio3.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/fashiotrendz/fashio4.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/fashiotrendz/fashio5.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/fashiotrendz/fashio6.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/fashiotrendz/fashio7.png"
+                  alt=""
+                />
+              </div>
             </Slider>
-          ) : null}
+          ): slide === 3 ? (
+            <Slider {...settings}>
+            <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads1.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads2.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads3.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads4.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads5.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads6.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads7.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  style={{ width: "100%", objectFit: "contain" }}
+                  src="/threads/threads8.png"
+                  alt=""
+                />
+              </div>
+            </Slider>
+          ): null}
+        </div>
+        <div className="col-12 text-center mb-3">
+          <h4>{slide === 1 ? "CRM App": slide === 2 ? "Fashiotrendz Ecommerce": slide === 3 ? "Threads CloneApp": ""}</h4>
+          {slide === 1 ? (
+            <a style={{fontSize: '16px'}} target="_blank" href="https://caqap-r.vercel.app">Demo {"=>"} </a>
+          ): slide === 2 ? (
+            <a style={{fontSize: '16px'}} target="_blank" href="https://fashiotrendz.handev.my.id">Demo {"=>"} </a>
+          ): slide === 3 ? (
+            <a style={{fontSize: '16px'}} target="_blank" href="https://threads.handev.my.id">Demo {"=>"} </a>
+          ): null}
         </div>
         <div className="col-12">
           <img
@@ -124,13 +245,13 @@ const Portofolio = () => {
             alt=""
             style={{ width: "100px" }}
           />
-          <img
+          <img onClick={() => setSlide(2)}
             className="mx-1 border"
             src="/fashiotrendz/fashio1.png"
             alt=""
             style={{ width: "100px" }}
           />
-          <img
+          <img onClick={() => setSlide(3)}
             className="mx-1 border"
             src="/threads/threads1.png"
             alt=""

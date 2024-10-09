@@ -16,8 +16,8 @@ const App = () => {
         ) : menu === 3 ? (
           <Portofolio />
         ) : null}
-      </section>
       <Menus menu={menu} setMenu={setMenu} />
+      </section>
     </>
   );
 };
