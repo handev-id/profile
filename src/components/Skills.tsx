@@ -155,6 +155,14 @@ const Skills = () => {
                 className="mx-auto"
               />
             </div>
+            <div>
+              <img
+                style={{ width: "70px", height: "70px" }}
+                src="/techstack/21.png"
+                alt=""
+                className="mx-auto"
+              />
+            </div>
           </Slider>
         </div>
       </div>

@@ -3,6 +3,7 @@ import Menus from "./components/Menus";
 import Profile from "./components/Profile";
 import Skills from "./components/Skills";
 import Portofolio from "./components/Portofolio";
+import Summary from "./components/Summary";
 
 const App = () => {
   const [menu, setMenu] = useState(1);
@@ -15,8 +16,10 @@ const App = () => {
           <Skills />
         ) : menu === 3 ? (
           <Portofolio />
-        ) : null}
-      <Menus menu={menu} setMenu={setMenu} />
+        ) : (
+          <Summary />
+        )}
+        <Menus menu={menu} setMenu={setMenu} />
       </section>
     </>
   );

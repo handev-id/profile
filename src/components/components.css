@@ -9,16 +9,21 @@
 
 .menus {
   margin: 0 auto;
-  margin-top: 50px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: flex;
   width: 600px;
   justify-content: space-between;
   background-color: var(--dark1);
   overflow: hidden;
   box-shadow: 1px -1px 50px 5px #00000015;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu {
