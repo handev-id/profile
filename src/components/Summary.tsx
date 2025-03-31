@@ -11,7 +11,7 @@ const Summary = () => {
     >
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
         <div>
-          <Viewer fileUrl={"/CV_HAN_FULLSTACKDEV.pdf"} />
+          <Viewer fileUrl={"/HANDEV_CV.pdf"} />
         </div>
       </Worker>
     </div>
