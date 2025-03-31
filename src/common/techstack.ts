@@ -3,13 +3,13 @@ import react from "../assets/techstack/react-js.png";
 import typescript from "../assets/techstack/typescript.png";
 import node from "../assets/techstack/node-js.png";
 import ubuntu from "../assets/techstack/ubuntu.png";
-import nest from "../assets/techstack/nest-js.png";
 import bootstrap from "../assets/techstack/bootstrap.png";
 import tailwind from "../assets/techstack/tailwind-css.webp";
 import git from "../assets/techstack/git.png";
 import laravel from "../assets/techstack/laravel.png";
 import adonis from "../assets/techstack/adonis.png";
 import js from "../assets/techstack/js.png";
+import php from "../assets/techstack/php.svg";
 
 export const techStacks = [
   {
@@ -21,28 +21,24 @@ export const techStacks = [
     image: node,
   },
   {
-    name: "ExpressJS",
-    image: express,
+    name: "Php",
+    image: php,
   },
   {
-    name: "NestJS",
-    image: nest,
+    name: "Laravel",
+    image: laravel,
+  },
+  {
+    name: "Javascript",
+    image: js,
   },
   {
     name: "Typescript",
     image: typescript,
   },
   {
-    name: "Ubuntu",
-    image: ubuntu,
-  },
-  {
-    name: "Git",
-    image: git,
-  },
-  {
-    name: "Laravel",
-    image: laravel,
+    name: "ExpressJS",
+    image: express,
   },
   {
     name: "AdonisJS",
@@ -57,7 +53,11 @@ export const techStacks = [
     image: tailwind,
   },
   {
-    name: "Javascript",
-    image: js,
+    name: "Git",
+    image: git,
+  },
+  {
+    name: "Ubuntu",
+    image: ubuntu,
   },
 ];
