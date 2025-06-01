@@ -1,27 +1,29 @@
-import { useState } from "react";
-import Menus from "./components/Menus";
-import Profile from "./components/Profile";
-import Skills from "./components/Skills";
-import Portofolio from "./components/Portofolio";
-import Summary from "./components/Summary";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import Apps from "./pages/Apps";
+import moment from "moment";
+import Links from "./pages/Link";
 
 const App = () => {
-  const [menu, setMenu] = useState(1);
+  moment.locale('id'); // sebelum render
+
   return (
-    <>
-      <section className="home" id="home">
-        {menu === 1 ? (
-          <Profile />
-        ) : menu === 2 ? (
-          <Skills />
-        ) : menu === 3 ? (
-          <Portofolio />
-        ) : (
-          <Summary />
-        )}
-        <Menus menu={menu} setMenu={setMenu} />
-      </section>
-    </>
+    <RouterProvider
+      router={createBrowserRouter([
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/apps",
+          element: <Apps />,
+        },
+        {
+          path: "/links",
+          element: <Links />
+        }
+      ])}
+    />
   );
 };
 
