@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
-import Apps from "./pages/Apps";
+import Apps from "./pages/apps";
 import moment from "moment";
 import Links from "./pages/Link";
 
 const App = () => {
-  moment.locale('id'); // sebelum render
+  moment.locale("id"); // sebelum render
 
   return (
     <RouterProvider
@@ -20,8 +20,8 @@ const App = () => {
         },
         {
           path: "/links",
-          element: <Links />
-        }
+          element: <Links />,
+        },
       ])}
     />
   );

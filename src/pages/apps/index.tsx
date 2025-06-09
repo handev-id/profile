@@ -4,13 +4,15 @@ import useApi from "../../apis/api";
 import { checkPinApi } from "../../apis/endpoints/pin";
 import toast from "react-hot-toast";
 import service from "../../apis/axios";
-import { FaLink, FaMoneyBillAlt } from "react-icons/fa";
+import { FaLink, FaMoneyBillAlt, FaProductHunt } from "react-icons/fa";
 import Transaction from "./Transaction";
 import Link from "./Link";
+import Project from "./Project";
 
 const menuItems = [
   { title: "Link", icon: <FaLink />, href: "#link" },
   { title: "Transaksi", icon: <FaMoneyBillAlt />, href: "#transaction" },
+  { title: "Projek", icon: <FaProductHunt />, href: "#project" },
 ];
 
 const Apps = () => {
@@ -57,19 +59,18 @@ const Apps = () => {
   useEffect(() => {
     const modalElement = document.getElementById("exampleModal");
     // @ts-ignore
-    const modalInstance = new Modal(modalElement, {
-      backdrop: "static", // ← Ini mencegah modal tertutup saat klik area luar
-      keyboard: false, // (Opsional) Mencegah close saat tekan ESC
-    });
+    const modalInstance = new Modal(modalElement);
     setModal(modalInstance);
   }, []);
 
   return (
     <div className="app-container p-2">
       {activeApp === "#transaction" ? (
-        <Transaction back={() =>setActiveApp("")} />
+        <Transaction back={() => setActiveApp("")} />
       ) : activeApp === "#link" ? (
         <Link back={() => setActiveApp("")} />
+      ) : activeApp === "#project" ? (
+        <Project back={() => setActiveApp("")} />
       ) : (
         <ul className="list-unstyled">
           {menuItems.map((item, index) => (
