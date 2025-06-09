@@ -26,7 +26,9 @@ const Home = () => {
         ) : menu === 2 ? (
           <Skills />
         ) : menu === 3 ? (
-          <Portofolio projects={projectIndex.data || []} />
+          <Portofolio
+            projects={projectIndex.data?.filter((p) => p.title !== "cv") || []}
+          />
         ) : (
           <Summary projects={projectIndex.data || []} />
         )}
