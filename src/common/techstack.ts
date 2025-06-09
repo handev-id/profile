@@ -15,7 +15,7 @@ import nest from "../assets/techstack/nest.png";
 
 export const techStacks = [
   {
-    name: "ReactJS",
+    name: "React JS",
     image: react,
   },
   {
@@ -23,7 +23,7 @@ export const techStacks = [
     image: nextJs,
   },
   {
-    name: "NodeJS",
+    name: "Node JS",
     image: node,
   },
   {
@@ -51,7 +51,7 @@ export const techStacks = [
     image: nest,
   },
   {
-    name: "AdonisJS",
+    name: "Adonis JS",
     image: adonis,
   },
   {
