@@ -10,7 +10,8 @@ import laravel from "../assets/techstack/laravel.png";
 import adonis from "../assets/techstack/adonis.png";
 import js from "../assets/techstack/js.png";
 import php from "../assets/techstack/php.svg";
-import nextJs from "../assets/techstack/nextjs.png"
+import nextJs from "../assets/techstack/nextjs.png";
+import nest from "../assets/techstack/nest.png";
 
 export const techStacks = [
   {
@@ -44,6 +45,10 @@ export const techStacks = [
   {
     name: "ExpressJS",
     image: express,
+  },
+  {
+    name: "Nest Js",
+    image: nest,
   },
   {
     name: "AdonisJS",
