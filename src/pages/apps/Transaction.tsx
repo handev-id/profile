@@ -6,6 +6,7 @@ import {
   transactionDestroyApi,
   transactionIndexApi,
   TransactionParams,
+  transactionStatisticsApi,
   transactionStoreApi,
   transactionUpdateApi,
 } from "../../apis/endpoints/transactions";
@@ -14,6 +15,7 @@ import useApi from "../../apis/api";
 import toast from "react-hot-toast";
 import moment from "moment";
 import Modal from "bootstrap/js/dist/modal";
+import { TransactionChart } from "../../components/TransactionChart";
 
 const Transaction = ({ back }: { back: () => void }) => {
   const [modal, setModal] = useState<Modal | null>(null);
@@ -62,6 +64,10 @@ const Transaction = ({ back }: { back: () => void }) => {
     },
   });
 
+  const transactionStatistics = useApi({
+    api: transactionStatisticsApi,
+  });
+
   const onSubmit = (data: TransactionModel) => {
     toast.promise(
       (data.id ? transactionUpdate : transactionStore).process(data),
@@ -91,11 +97,13 @@ const Transaction = ({ back }: { back: () => void }) => {
     setModal(modalInstance);
 
     transactionIndex.process({});
+    transactionStatistics.process({});
   }, []);
 
   useEffect(() => {
     const subscription = watchParams((values) => {
       transactionIndex.process({ ...values });
+      transactionStatistics.process({ month: values.month });
     });
 
     return () => {
@@ -166,6 +174,11 @@ const Transaction = ({ back }: { back: () => void }) => {
           style={{ height: "100%", overflowY: "auto", padding: "85px 0" }}
           className="w-100"
         >
+          {transactionStatistics.data && (
+            <div>
+              <TransactionChart data={transactionStatistics.data} />
+            </div>
+          )}
           {transactionIndex.data?.map((trans) => (
             <div
               key={trans.id}
@@ -174,7 +187,7 @@ const Transaction = ({ back }: { back: () => void }) => {
                 modal?.show();
               }}
               style={{ borderRadius: "8px" }}
-              className="a-menu mx-3 mb-2"
+              className="a-menu mx-3 mb-2 shadow-sm "
             >
               <div className={`icon ${trans.type}`}>
                 {trans.type === "income" ? (
