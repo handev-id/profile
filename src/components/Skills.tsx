@@ -39,7 +39,11 @@ const Skills = () => {
             {techStacks.map((item) => (
               <div className="flex flex-col items-center">
                 <img
-                  style={{ width: "70px", height: "70px" }}
+                  style={{
+                    width: "70px",
+                    height: "70px",
+                    objectFit: "contain",
+                  }}
                   src={item.image}
                   alt={item.name}
                   className="mx-auto"

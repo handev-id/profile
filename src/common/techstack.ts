@@ -3,15 +3,13 @@ import react from "../assets/techstack/react-js.png";
 import typescript from "../assets/techstack/typescript.png";
 import node from "../assets/techstack/node-js.png";
 import ubuntu from "../assets/techstack/ubuntu.png";
-import bootstrap from "../assets/techstack/bootstrap.png";
-import tailwind from "../assets/techstack/tailwind-css.webp";
 import git from "../assets/techstack/git.png";
 import laravel from "../assets/techstack/laravel.png";
 import adonis from "../assets/techstack/adonis.png";
-import js from "../assets/techstack/js.png";
-import php from "../assets/techstack/php.svg";
 import nextJs from "../assets/techstack/nextjs.png";
 import nest from "../assets/techstack/nest.png";
+import bunjs from "../assets/techstack/bunjs.png";
+import golang from "../assets/techstack/golang.png";
 
 export const techStacks = [
   {
@@ -27,23 +25,15 @@ export const techStacks = [
     image: node,
   },
   {
-    name: "Php",
-    image: php,
-  },
-  {
-    name: "Laravel",
-    image: laravel,
-  },
-  {
-    name: "Javascript",
-    image: js,
+    name: "Bun JS",
+    image: bunjs,
   },
   {
     name: "Typescript",
     image: typescript,
   },
   {
-    name: "ExpressJS",
+    name: "Express JS",
     image: express,
   },
   {
@@ -55,12 +45,12 @@ export const techStacks = [
     image: adonis,
   },
   {
-    name: "Bootstrap",
-    image: bootstrap,
+    name: "Golang",
+    image: golang,
   },
   {
-    name: "TailwindCSS",
-    image: tailwind,
+    name: "Laravel",
+    image: laravel,
   },
   {
     name: "Git",
