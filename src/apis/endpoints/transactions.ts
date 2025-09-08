@@ -1,4 +1,5 @@
 import service from "../axios";
+import { Statistic } from "../models/statistic";
 import { Transaction } from "../models/transaction";
 
 export type TransactionParams = {
@@ -8,7 +9,9 @@ export type TransactionParams = {
   month?: string;
 };
 
-export const transactionIndexApi = (query: TransactionParams): Promise<Transaction[]> => {
+export const transactionIndexApi = (
+  query: TransactionParams
+): Promise<Transaction[]> => {
   return service
     .get("/transactions", {
       params: {
@@ -32,4 +35,18 @@ export const transactionUpdateApi = (
 
 export const transactionDestroyApi = (id: number): Promise<Transaction> => {
   return service.delete("/transactions/" + id).then((res) => res.data);
+};
+
+export const transactionStatisticsApi = ({
+  month,
+}: {
+  month?: string;
+}): Promise<Statistic> => {
+  return service
+    .get("/transactions/statistics", {
+      params: {
+        month,
+      },
+    })
+    .then((res) => res.data);
 };
