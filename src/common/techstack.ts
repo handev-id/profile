@@ -9,7 +9,7 @@ import adonis from "../assets/techstack/adonis.png";
 import nextJs from "../assets/techstack/nextjs.png";
 import nest from "../assets/techstack/nest.png";
 import bunjs from "../assets/techstack/bunjs.png";
-// import golang from "../assets/techstack/golang.png";
+import golang from "../assets/techstack/golang.png";
 
 export const techStacks = [
   {
@@ -44,10 +44,10 @@ export const techStacks = [
     name: "Adonis JS",
     image: adonis,
   },
-  // {
-  //   name: "Golang",
-  //   image: golang,
-  // },
+  {
+     name: "Golang",
+     image: golang,
+  },
   {
     name: "Laravel",
     image: laravel,
