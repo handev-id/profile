@@ -27,6 +27,21 @@ const Summary = ({ projects }: { projects: Project[] }) => {
               "/HANDEV_CV.pdf"
             }
           />
+          <div className="mt-3 d-flex justify-content-center ">
+            <a
+              className="text-white"
+              href={
+                `${import.meta.env.VITE_BACKEND_URL}/storage/projects/`.replace(
+                  "/api",
+                  ""
+                ) + projects.find((p) => p.title === "cv")?.images[0] ||
+                "/HANDEV_CV.pdf"
+              }
+              target="_blank"
+            >
+              Download CV
+            </a>
+          </div>
         </div>
       </Worker>
     </div>
