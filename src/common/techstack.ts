@@ -10,6 +10,8 @@ import nextJs from "../assets/techstack/nextjs.png";
 import nest from "../assets/techstack/nest.png";
 import bunjs from "../assets/techstack/bunjs.png";
 import golang from "../assets/techstack/golang.png";
+import docker from "../assets/techstack/docker.png";
+import postgresql from "../assets/techstack/postgresql.png";
 
 export const techStacks = [
   {
@@ -45,12 +47,16 @@ export const techStacks = [
     image: adonis,
   },
   {
-     name: "Golang",
-     image: golang,
+    name: "Golang",
+    image: golang,
   },
   {
     name: "Laravel",
     image: laravel,
+  },
+  {
+    name: "Docker",
+    image: docker,
   },
   {
     name: "Git",
@@ -59,5 +65,9 @@ export const techStacks = [
   {
     name: "Ubuntu",
     image: ubuntu,
+  },
+  {
+    name: "PostgreSQL",
+    image: postgresql,
   },
 ];
