@@ -1,17 +1,15 @@
-import express from "../assets/techstack/express.png";
 import react from "../assets/techstack/react-js.png";
 import typescript from "../assets/techstack/typescript.png";
 import node from "../assets/techstack/node-js.png";
 import ubuntu from "../assets/techstack/ubuntu.png";
 import git from "../assets/techstack/git.png";
 import laravel from "../assets/techstack/laravel.png";
-import adonis from "../assets/techstack/adonis.png";
 import nextJs from "../assets/techstack/nextjs.png";
-import nest from "../assets/techstack/nest.png";
 import bunjs from "../assets/techstack/bunjs.png";
 import golang from "../assets/techstack/golang.png";
 import docker from "../assets/techstack/docker.png";
 import postgresql from "../assets/techstack/postgresql.png";
+import php from "../assets/techstack/php.svg";
 
 export const techStacks = [
   {
@@ -35,20 +33,12 @@ export const techStacks = [
     image: typescript,
   },
   {
-    name: "Express JS",
-    image: express,
-  },
-  {
-    name: "Nest Js",
-    image: nest,
-  },
-  {
-    name: "Adonis JS",
-    image: adonis,
-  },
-  {
     name: "Golang",
     image: golang,
+  },
+  {
+    name: "PHP",
+    image: php,
   },
   {
     name: "Laravel",
@@ -63,11 +53,11 @@ export const techStacks = [
     image: git,
   },
   {
-    name: "Ubuntu",
-    image: ubuntu,
-  },
-  {
     name: "PostgreSQL",
     image: postgresql,
+  },
+  {
+    name: "Ubuntu",
+    image: ubuntu,
   },
 ];
