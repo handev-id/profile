@@ -3,7 +3,7 @@ const Profile = () => {
     <div className="row profile text-center">
       <div className="col-12">
         <img
-          src="/z-profile.jpeg"
+          src="/profile.png"
           alt="handev"
           className="rounded-circle mx-auto"
         />
