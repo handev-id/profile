@@ -21,11 +21,11 @@ export const techStacks = [
     image: nextJs,
   },
   {
-    name: "Node JS (Express JS, Nest JS, Adonis JS)",
+    name: "Node JS",
     image: node,
   },
   {
-    name: "Bun JS (Hono JS, Elysia JS)",
+    name: "Bun JS",
     image: bunjs,
   },
   {
