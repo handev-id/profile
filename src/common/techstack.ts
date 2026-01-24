@@ -9,7 +9,7 @@ import golang from "../assets/techstack/golang.png";
 import docker from "../assets/techstack/docker.png";
 import postgresql from "../assets/techstack/postgresql.png";
 import php from "../assets/techstack/php.svg";
-import nest from "../assets/techstack/nestjs.png";
+import nest from "../assets/techstack/nest.png";
 
 export const techStacks = [
   {
