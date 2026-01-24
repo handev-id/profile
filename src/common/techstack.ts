@@ -1,7 +1,6 @@
 import react from "../assets/techstack/react-js.png";
 import typescript from "../assets/techstack/typescript.png";
 import node from "../assets/techstack/node-js.png";
-import ubuntu from "../assets/techstack/ubuntu.png";
 import git from "../assets/techstack/git.png";
 import laravel from "../assets/techstack/laravel.png";
 import nextJs from "../assets/techstack/nextjs.png";
@@ -10,6 +9,7 @@ import golang from "../assets/techstack/golang.png";
 import docker from "../assets/techstack/docker.png";
 import postgresql from "../assets/techstack/postgresql.png";
 import php from "../assets/techstack/php.svg";
+import nest from "../assets/techstack/nestjs.png";
 
 export const techStacks = [
   {
@@ -23,6 +23,10 @@ export const techStacks = [
   {
     name: "Node JS",
     image: node,
+  },
+  {
+    name: "Nest JS",
+    image: nest,
   },
   {
     name: "Bun JS",
@@ -55,9 +59,5 @@ export const techStacks = [
   {
     name: "PostgreSQL",
     image: postgresql,
-  },
-  {
-    name: "Ubuntu",
-    image: ubuntu,
   },
 ];
