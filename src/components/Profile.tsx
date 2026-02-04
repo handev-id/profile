@@ -12,13 +12,19 @@ const Profile = () => {
           Enjoy learning new things, committed to assigned tasks, and adaptable.
         </p>
         <div className="app mb-3">
-          <a href="https://www.linkedin.com/in/muhamad-parhan-maulana-231a6122a/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/muhamad-parhan-maulana-231a6122a/"
+          >
             <i className="fa-brands fa-linkedin mx-2 fs-5"></i>
           </a>
-          <a href="https://github.com/handev-id">
+          <a target="_blank" href="https://github.com/handev-id">
             <i className="fa-brands fa-github mx-2 fs-5"></i>
           </a>
-          <a href="https://api.whatsapp.com/send/?phone=6283836319218&text&type=phone_number&app_absent=0">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send/?phone=6283836319218&text&type=phone_number&app_absent=0"
+          >
             <i className="fa-brands fa-whatsapp mx-2 fs-5"></i>
           </a>
         </div>

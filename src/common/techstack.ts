@@ -10,6 +10,10 @@ import docker from "../assets/techstack/docker.png";
 import postgresql from "../assets/techstack/postgresql.png";
 import php from "../assets/techstack/php.svg";
 import nest from "../assets/techstack/nest.png";
+import express from "../assets/techstack/express.png";
+import adonis from "../assets/techstack/adonis.png";
+import linux from "../assets/techstack/linux.png";
+import socket from "../assets/techstack/socket.png";
 
 export const techStacks = [
   {
@@ -25,8 +29,16 @@ export const techStacks = [
     image: node,
   },
   {
+    name: "Express JS",
+    image: express,
+  },
+  {
     name: "Nest JS",
     image: nest,
+  },
+  {
+    name: "Adonis JS",
+    image: adonis,
   },
   {
     name: "Bun JS",
@@ -35,6 +47,10 @@ export const techStacks = [
   {
     name: "Typescript",
     image: typescript,
+  },
+  {
+    name: "Socket.io",
+    image: socket,
   },
   {
     name: "Golang",
@@ -59,5 +75,9 @@ export const techStacks = [
   {
     name: "PostgreSQL",
     image: postgresql,
+  },
+  {
+    name: "Linux",
+    image: linux,
   },
 ];

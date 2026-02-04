@@ -8,7 +8,9 @@ const Skills = () => {
         style={{ backgroundColor: "#262a33", color: "#fff" }}
       >
         <div className="col-12 mb-4">
-          <h2 style={{ fontWeight: "bold", fontSize: "1.8rem" }}>Tech Stack</h2>
+          <h2 style={{ fontWeight: "bold", fontSize: "1.8rem" }}>
+            Tools & Technologies
+          </h2>
         </div>
         <div
           className="d-flex flex-wrap justify-content-center gap-4"
