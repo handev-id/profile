@@ -30,7 +30,7 @@ const Home = () => {
             projects={projectIndex.data?.filter((p) => p.title !== "cv") || []}
           />
         ) : (
-          <Summary projects={projectIndex.data || []} />
+          <Summary />
         )}
         <Menus menu={menu} setMenu={setMenu} />
       </section>
